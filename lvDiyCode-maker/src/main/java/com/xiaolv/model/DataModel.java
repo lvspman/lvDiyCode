@@ -8,7 +8,7 @@ import lombok.Data;
  */
 @Data
 public class DataModel {
-    private String name ="小吕";
-    private String outputText = "this is my output";
-    private boolean loop = false;
+    public String name ="小吕";
+    public String outputText = "this is my output";
+    public boolean loop = false;
 }

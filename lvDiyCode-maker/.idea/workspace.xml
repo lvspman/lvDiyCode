@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec6fef97-98fe-434a-9f96-6cad01aabebd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/aaa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/file/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/file/FileGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/MainGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/MainGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/Meta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/Meta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/MetaManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/MetaManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/MetaValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/MetaValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/enums/FileTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/enums/FileTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/model/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/model/DataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/README.md.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/README.md.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/java/cli/command/GenerateCommand.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/java/cli/command/GenerateCommand.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/java/generator/MainGenerator.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/java/generator/MainGenerator.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/java/model/DataModel.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/java/model/DataModel.java.ftl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ZqN6Jjj1l5a9ijsHfy6TwaqA0h" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/study/project/lvDiyCode&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\project\lvDiyCode\lvDiyCode-maker\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xiaolv.cli.command" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="GenerateCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.cli.command.GenerateCommand" />
+      <module name="lvDiyCode-maker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.cli.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JarGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.generator.JarGenerator" />
+      <module name="lvDiyCode-maker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.Main" />
+      <module name="lvDiyCode-maker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.generator.main.MainGenerator" />
+      <module name="lvDiyCode-maker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.generator.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArgGroupCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yupi.cli.command.TestArgGroupCommand" />
+      <module name="lvDiyCode-maker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yupi.cli.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestArgGroupCommand" />
+        <item itemvalue="Application.MainGenerator" />
+        <item itemvalue="Application.GenerateCommand" />
+        <item itemvalue="Application.JarGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec6fef97-98fe-434a-9f96-6cad01aabebd" name="Changes" comment="" />
+      <created>1703145472803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703145472803</updated>
+      <workItem from="1703145474498" duration="7230000" />
+      <workItem from="1703159600984" duration="8013000" />
+      <workItem from="1703590024130" duration="2362000" />
+      <workItem from="1703643258982" duration="2195000" />
+      <workItem from="1703645727803" duration="415000" />
+      <workItem from="1703646480771" duration="1235000" />
+      <workItem from="1703647743831" duration="1768000" />
+      <workItem from="1703681861364" duration="7744000" />
+      <workItem from="1704092639394" duration="6952000" />
+      <workItem from="1704108404423" duration="6886000" />
+      <workItem from="1704120340223" duration="684000" />
+      <workItem from="1704177654924" duration="2651000" />
+      <workItem from="1704183642986" duration="718000" />
+      <workItem from="1704191424437" duration="6004000" />
+      <workItem from="1704197969192" duration="3026000" />
+    </task>
+    <task id="LOCAL-00001" summary="制作工具优化">
+      <created>1703689566479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703689566479</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="制作工具优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="制作工具优化" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xiaolv/generator/file/DynamicFileGenerator.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

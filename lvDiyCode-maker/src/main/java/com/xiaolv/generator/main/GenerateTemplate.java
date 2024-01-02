@@ -50,7 +50,7 @@ public abstract class GenerateTemplate {
      * @param shellOutputFilePath
      */
 
-    protected static void buildDist(String outputPath, String sourceCopyDestPath, String jarPath, String shellOutputFilePath) {
+    protected void buildDist(String outputPath, String sourceCopyDestPath, String jarPath, String shellOutputFilePath) {
         //生成精简版的程序（精简产物包）
         String distOutputPath = outputPath +  "-dist";
         // - 拷贝 jar 包
@@ -73,7 +73,7 @@ public abstract class GenerateTemplate {
      * @return
      * @throws IOException
      */
-    protected static String buildScript(Meta meta, String outputPath, String jarPath) throws IOException {
+    protected  String buildScript(Meta meta, String outputPath, String jarPath) throws IOException {
         // 封装脚本
         String shellOutputFilePath = outputPath + File.separator + "generator";
         String jarName = String.format("%s-%s-jar-with-dependencies.jar", meta.getName(), meta.getVersion());
@@ -102,7 +102,7 @@ public abstract class GenerateTemplate {
      * @throws IOException
      * @throws TemplateException
      */
-    protected static void generateCode(Meta meta, String outputPath) throws IOException, TemplateException {
+    protected  void generateCode(Meta meta, String outputPath) throws IOException, TemplateException {
         // 读取 resources 目录
         ClassPathResource classPathResource = new ClassPathResource("");
         String inputResourcePath = classPathResource.getAbsolutePath();
@@ -125,7 +125,7 @@ public abstract class GenerateTemplate {
         outputFilePath = outputBaseJavaPackagePath + "/cli/command/ConfigCommand.java";
         DynamicFileGenerator.doGenerate(inputFilePath, outputFilePath, meta);
 
-        // cli.command.GenerateCommand
+        // cli.command.GenerateCommand.java.ftl
         inputFilePath = inputResourcePath + File.separator + "templates/java/cli/command/GenerateCommand.java.ftl";
         outputFilePath = outputBaseJavaPackagePath + "/cli/command/GenerateCommand.java";
         DynamicFileGenerator.doGenerate(inputFilePath, outputFilePath, meta);
@@ -166,9 +166,9 @@ public abstract class GenerateTemplate {
         DynamicFileGenerator.doGenerate(inputFilePath, outputFilePath, meta);
 
         // README.md.ftl
-        inputFilePath = inputResourcePath + File.separator + "templates/README.md.ftl";
-        outputFilePath = outputPath + File.separator + "README.md";
-        DynamicFileGenerator.doGenerate(inputFilePath, outputFilePath, meta);
+//        inputFilePath = inputResourcePath + File.separator + "templates/README.md.ftl";
+//        outputFilePath = outputPath + File.separator + "README.md";
+//        DynamicFileGenerator.doGenerate(inputFilePath, outputFilePath, meta);
     }
 
     /**
@@ -178,7 +178,7 @@ public abstract class GenerateTemplate {
      * @param outputPath
      * @return
      */
-    protected static String copySource(Meta meta, String outputPath) {
+    protected String copySource(Meta meta, String outputPath) {
         // 复制 source 目录
         String sourcePath = meta.getFileConfig().getSourceRootPath();
         String sourceCopyDestPath  = outputPath + File.separator + ".source";

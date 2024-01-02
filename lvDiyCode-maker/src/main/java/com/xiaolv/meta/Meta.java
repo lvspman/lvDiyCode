@@ -34,10 +34,14 @@ public class Meta {
         @NoArgsConstructor
         @Data
         public static class FileInfo {
-            private String inputPath;
-            private String outputPath;
-            private String type;
-            private String generateType;
+            public String inputPath;
+            public String outputPath;
+            public String type;
+            public String generateType;
+            public String condition;
+            public String groupKey;
+            public String groupName;
+            public List<FileInfo> files;
         }
     }
 
@@ -49,11 +53,19 @@ public class Meta {
         @NoArgsConstructor
         @Data
         public static class ModelInfo {
-            private String fieldName;
-            private String type;
-            private String description;
-            private Object defaultValue;
-            private String abbr;
+            public String fieldName;
+            public String type;
+            public String description;
+            public Object defaultValue;
+            public String abbr;
+            public String groupKey;
+            public String groupName;
+            public List<ModelInfo> models;
+            public String condition;
+
+            // 中间参数
+            // 该分组下所有参数拼接字符串
+            private String allArgsStr;
         }
     }
 }

@@ -32,8 +32,8 @@ public class FileGenerator {
             // 生成静态文件
             StaticFileGenerator.copyFilesByHutool(inputPath, outputPath);
             // 生成动态文件
-            String inputDynamicFilePath = projectPath + File.separator + "src/main/resources/templates/MainTemplate.java.ftl.java.ftl";
-            String outputDynamicFilePath = outputPath + File.separator + "acm-template/src/com/xiaolv/acm/MainTemplate.java.ftl.java";
+            String inputDynamicFilePath = projectPath + File.separator + "src/main/resources/templates/MainTemplate.java.ftl";
+            String outputDynamicFilePath = outputPath + File.separator + "acm-template/src/com/xiaolv/acm/MainTemplate.java";
             DynamicFileGenerator.doGenerate(inputDynamicFilePath, outputDynamicFilePath, model);
         }
 
@@ -72,7 +72,7 @@ public class FileGenerator {
         outputFilePath = outputBaseJavaPackagePath + "/cli/command/ConfigCommand.java";
         DynamicFileGenerator.doGenerate(inputFilePath , outputFilePath, meta);
 
-        // cli.command.GenerateCommand
+        // cli.command.GenerateCommand.java.ftl
         inputFilePath = inputResourcePath + File.separator + "templates/java/cli/command/GenerateCommand.java.ftl";
         outputFilePath = outputBaseJavaPackagePath + "/cli/command/GenerateCommand.java";
         DynamicFileGenerator.doGenerate(inputFilePath , outputFilePath, meta);
