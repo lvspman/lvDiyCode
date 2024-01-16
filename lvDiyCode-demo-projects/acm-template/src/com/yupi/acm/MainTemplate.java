@@ -1,5 +1,4 @@
-package com.xiaolv.acm;
-
+package com.yupi.acm;
 import java.util.Scanner;
 
 /**

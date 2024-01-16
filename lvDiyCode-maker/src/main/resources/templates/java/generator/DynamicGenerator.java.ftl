@@ -37,7 +37,7 @@ public class DynamicGenerator {
 
         // 创建模板对象，加载指定模板
         String templateName = new File(inputPath).getName();
-        Template template = configuration.getTemplate(templateName);
+        Template template = configuration.getTemplate(templateName,"UTF-8");
 
         // 文件不存在则创建文件和父目录
         if (!FileUtil.exist(outputPath)) {
