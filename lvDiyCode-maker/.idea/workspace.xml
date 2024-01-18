@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec6fef97-98fe-434a-9f96-6cad01aabebd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/aaa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/file/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/file/FileGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/MainGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/MainGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/Meta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/Meta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/MetaManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/MetaManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/MetaValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/MetaValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/enums/FileTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/enums/FileTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/model/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/model/DataModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/meta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/README.md.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/README.md.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/java/cli/command/GenerateCommand.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/java/cli/command/GenerateCommand.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/java/generator/MainGenerator.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/java/generator/MainGenerator.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/java/model/DataModel.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/java/model/DataModel.java.ftl" afterDir="false" />
-    </list>
+    <list default="true" id="ec6fef97-98fe-434a-9f96-6cad01aabebd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -56,7 +42,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/study/project/lvDiyCode&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/study/project/lvDiyCode/lvDiyCode-maker/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -70,40 +59,24 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\project\lvDiyCode\lvDiyCode-maker\src\main\resources" />
+      <recent name="D:\study\project\lvDiyCode\lvDiyCode-maker\src\main\java\com\xiaolv" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\study\project\lvDiyCode\lvDiyCode-maker\src\main\resources\templates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.xiaolv.template" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xiaolv.cli.command" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="GenerateCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaolv.cli.command.GenerateCommand" />
-      <module name="lvDiyCode-maker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiaolv.cli.command.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JarGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaolv.generator.JarGenerator" />
-      <module name="lvDiyCode-maker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiaolv.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xiaolv.Main" />
       <module name="lvDiyCode-maker" />
@@ -117,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaolv.generator.main.MainGenerator" />
+    <configuration name="TemplateMaker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.template.TemplateMaker" />
       <module name="lvDiyCode-maker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiaolv.generator.main.*" />
+          <option name="PATTERN" value="com.xiaolv.template.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,15 +103,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestArgGroupCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yupi.cli.command.TestArgGroupCommand" />
+    <configuration name="TemplateMakerTest.makeSpringBootTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lvDiyCode-maker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yupi.cli.command.*" />
+          <option name="PATTERN" value="com.xiaolv.template.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.xiaolv.template" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.template.TemplateMakerTest" />
+      <option name="METHOD_NAME" value="makeSpringBootTemplate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemplateMakerTest.testMakeTemplateBug3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lvDiyCode-maker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaolv.template" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.template.TemplateMakerTest" />
+      <option name="METHOD_NAME" value="testMakeTemplateBug3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemplateMakerTest.testMakeTemplateWithJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lvDiyCode-maker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaolv.template" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.template.TemplateMakerTest" />
+      <option name="METHOD_NAME" value="testMakeTemplateWithJSON" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,10 +154,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestArgGroupCommand" />
-        <item itemvalue="Application.MainGenerator" />
-        <item itemvalue="Application.GenerateCommand" />
-        <item itemvalue="Application.JarGenerator" />
+        <item itemvalue="JUnit.TemplateMakerTest.makeSpringBootTemplate" />
+        <item itemvalue="Application.TemplateMaker" />
+        <item itemvalue="JUnit.TemplateMakerTest.testMakeTemplateWithJSON" />
+        <item itemvalue="JUnit.TemplateMakerTest.testMakeTemplateBug3" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +184,16 @@
       <workItem from="1704183642986" duration="718000" />
       <workItem from="1704191424437" duration="6004000" />
       <workItem from="1704197969192" duration="3026000" />
+      <workItem from="1704249946453" duration="638000" />
+      <workItem from="1704263728212" duration="1978000" />
+      <workItem from="1704360155228" duration="9836000" />
+      <workItem from="1704788668272" duration="2071000" />
+      <workItem from="1704969362321" duration="12337000" />
+      <workItem from="1705367111939" duration="762000" />
+      <workItem from="1705367897719" duration="6438000" />
+      <workItem from="1705375140473" duration="8196000" />
+      <workItem from="1705383744182" duration="303000" />
+      <workItem from="1705397889862" duration="102000" />
     </task>
     <task id="LOCAL-00001" summary="制作工具优化">
       <created>1703689566479</created>
@@ -193,21 +211,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="制作工具优化" />
     <option name="LAST_COMMIT_MESSAGE" value="制作工具优化" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xiaolv/generator/file/DynamicFileGenerator.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

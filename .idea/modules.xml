@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lvDiyCode.iml" filepath="$PROJECT_DIR$/lvDiyCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/lvDiyCode-basic.iml" filepath="$PROJECT_DIR$/lvDiyCode-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvDiyCode-maker/lvDiyCode-maker.iml" filepath="$PROJECT_DIR$/lvDiyCode-maker/lvDiyCode-maker.iml" />
     </modules>
   </component>
 </project>
