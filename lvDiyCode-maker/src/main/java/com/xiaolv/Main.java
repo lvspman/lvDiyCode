@@ -1,7 +1,7 @@
 package com.xiaolv;
 
-import com.xiaolv.cli.CommandExecutor;
-import com.xiaolv.generator.main.MainGenerator;
+import com.xiaolv.generator.main.GenerateTemplate;
+import com.xiaolv.generator.main.ZipGenerator;
 import freemarker.template.TemplateException;
 
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws TemplateException, IOException, InterruptedException {
-        MainGenerator mainGenerator = new MainGenerator();
-        mainGenerator.doGenerate();
+        GenerateTemplate generateTemplate = new ZipGenerator();
+        generateTemplate.doGenerate();
     }
 }

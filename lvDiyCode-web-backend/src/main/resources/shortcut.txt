@@ -205,3 +205,46 @@ Tab缩进 （必备）
 ESC 从工具窗口进入代码文件窗口 （必备）
 连按两次Shift 弹出 Search Everywhere 弹出层
 
+// 调用 COS 接口之前必须保证本进程存在一个 COSClient 实例，如果没有则创建
+// 详细代码参见本页：简单操作 -> 创建 COSClient
+COSClient cosClient = createCOSClient();
+
+
+// 存储桶的命名格式为 BucketName-APPID，此处填写的存储桶名称必须为此格式
+String bucketName = "examplebucket-1250000000";
+// 对象键(Key)是对象在存储桶中的唯一标识。详情请参见 [对象键](https://cloud.tencent.com/document/product/436/13324)
+String key = "exampleobject";
+
+
+GetObjectRequest getObjectRequest = new GetObjectRequest(bucketName, key);
+COSObjectInputStream cosObjectInput = null;
+
+
+try {
+    COSObject cosObject = cosClient.getObject(getObjectRequest);
+    cosObjectInput = cosObject.getObjectContent();
+} catch (CosServiceException e) {
+    e.printStackTrace();
+} catch (CosClientException e) {
+    e.printStackTrace();
+} catch (InterruptedException e) {
+    e.printStackTrace();
+}
+
+
+// 处理下载到的流
+// 这里是直接读取，按实际情况来处理
+byte[] bytes = null;
+try {
+    bytes = IOUtils.toByteArray(cosObjectInput);
+} catch (IOException e) {
+    e.printStackTrace();
+} finally {
+    // 用完流之后一定要调用 close()
+    cosObjectInput.close();
+}
+
+
+// 在流没有处理完之前，不能关闭 cosClient
+// 确认本进程不再使用 cosClient 实例之后，关闭即可
+cosClient.shutdown();

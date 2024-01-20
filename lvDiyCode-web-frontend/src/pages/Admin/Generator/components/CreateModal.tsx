@@ -1,8 +1,8 @@
-import { addGenerator } from '@/services/backend/generatorController';
 import { ProColumns, ProTable } from '@ant-design/pro-components';
 import '@umijs/max';
 import { message, Modal } from 'antd';
 import React from 'react';
+import {addGeneratorUsingPost} from "@/services/backend/generatorController";
 
 interface Props {
   visible: boolean;
@@ -20,7 +20,7 @@ const handleAdd = async (fields: API.GeneratorAddRequest) => {
   fields.modelConfig = JSON.parse((fields.modelConfig || '{}') as string);
   const hide = message.loading('正在添加');
   try {
-    await addGenerator(fields);
+    await addGeneratorUsingPost(fields);
     hide();
     message.success('创建成功');
     return true;

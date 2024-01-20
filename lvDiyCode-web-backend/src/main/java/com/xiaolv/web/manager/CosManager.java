@@ -1,13 +1,18 @@
 package com.xiaolv.web.manager;
 
 import com.qcloud.cos.COSClient;
-import com.qcloud.cos.model.PutObjectRequest;
-import com.qcloud.cos.model.PutObjectResult;
+import com.qcloud.cos.exception.CosClientException;
+import com.qcloud.cos.exception.CosServiceException;
+import com.qcloud.cos.model.*;
+import com.qcloud.cos.utils.IOUtils;
 import com.xiaolv.web.config.CosClientConfig;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.io.File;
+import java.io.IOException;
+
+import static com.qcloud.cos.demo.BucketReplicationDemo.createCOSClient;
 
 /**
  * Cos 对象存储操作
@@ -48,4 +53,17 @@ public class CosManager {
                 file);
         return cosClient.putObject(putObjectRequest);
     }
+
+    /**
+     * 下载对象
+     *
+     * @param key 唯一键
+     * @return
+     */
+    public COSObject getObject(String key) throws IOException {
+        GetObjectRequest getObjectRequest = new GetObjectRequest(cosClientConfig.getBucket(), key);
+        return cosClient.getObject(getObjectRequest);
+    }
+
+    //
 }

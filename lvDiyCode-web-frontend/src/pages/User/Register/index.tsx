@@ -1,5 +1,4 @@
 import Footer from '@/components/Footer';
-import { userRegister } from '@/services/backend/userController';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { LoginForm, ProFormText } from '@ant-design/pro-components';
 import { useEmotionCss } from '@ant-design/use-emotion-css';
@@ -8,6 +7,7 @@ import { message, Tabs } from 'antd';
 import React, { useState } from 'react';
 import { Link } from 'umi';
 import Settings from '../../../../config/defaultSettings';
+import {userRegisterUsingPost} from "@/services/backend/userController";
 
 /**
  * 用户注册页面
@@ -31,7 +31,7 @@ const UserRegisterPage: React.FC = () => {
   const handleSubmit = async (values: API.UserRegisterRequest) => {
     try {
       // 注册
-      await userRegister({
+      await userRegisterUsingPost({
         ...values,
       });
 
