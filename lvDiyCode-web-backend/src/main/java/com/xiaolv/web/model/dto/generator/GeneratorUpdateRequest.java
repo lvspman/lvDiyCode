@@ -1,6 +1,6 @@
 package com.xiaolv.web.model.dto.generator;
 
-import com.xiaolv.web.meta.Meta;
+import com.xiaolv.meta.Meta;
 import lombok.Data;
 
 import java.io.Serializable;

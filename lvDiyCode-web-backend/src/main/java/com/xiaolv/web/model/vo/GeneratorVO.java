@@ -1,7 +1,7 @@
 package com.xiaolv.web.model.vo;
 
 import cn.hutool.json.JSONUtil;
-import com.xiaolv.web.meta.Meta;
+import com.xiaolv.meta.Meta;
 import com.xiaolv.web.model.entity.Generator;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;

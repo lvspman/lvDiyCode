@@ -1,7 +1,14 @@
 package com.xiaolv.web.controller;
 
+import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.RandomUtil;
+import com.xiaolv.generator.main.GenerateTemplate;
+import com.xiaolv.generator.main.ZipGenerator;
+import com.xiaolv.meta.Meta;
+
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.nio.file.attribute.PosixFilePermission;
 import java.nio.file.attribute.PosixFilePermissions;
 import java.util.Map;
@@ -14,6 +21,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.qcloud.cos.model.COSObject;
 import com.qcloud.cos.model.COSObjectInputStream;
 import com.qcloud.cos.utils.IOUtils;
+import com.xiaolv.meta.MetaValidator;
 import com.xiaolv.web.annotation.AuthCheck;
 import com.xiaolv.web.common.BaseResponse;
 import com.xiaolv.web.common.DeleteRequest;
@@ -302,7 +310,6 @@ public class GeneratorController {
         }
     }
 
-
     /* 使用代码生成器
      *
      * @param generatorUseRequest
@@ -419,4 +426,73 @@ public class GeneratorController {
         });
     }
 
+    /* 制作代码生成器
+     *
+     * @param generatorMakeRequest
+     * @return
+     */
+    @PostMapping("/make")
+    public void makeGenerator(@RequestBody GeneratorMakeRequest generatorMakeRequest, HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        //1. 接受参数
+        String zipFilePath = generatorMakeRequest.getZipFilePath();
+        Meta meta = generatorMakeRequest.getMeta();
+
+        // 需要用户登录
+        User loginUser = userService.getLoginUser(request);
+        log.info("用户Id = {} 在线制作生成器", loginUser.getId());
+
+        //2. 创建独立的工作空间，下载压缩包到本地
+        String projectPath = System.getProperty("user.dir");
+        String id = IdUtil.getSnowflakeNextId() + RandomUtil.randomString(6);
+        String tempDirPath = String.format("%s/.temp/%s", projectPath, id);
+        String localZipFilePath = tempDirPath + "/project.zip";
+
+        if (!FileUtil.exist(localZipFilePath)){
+            FileUtil.touch(localZipFilePath);
+        }
+
+        // 下载文件
+        try {
+            cosManager.download(zipFilePath, localZipFilePath);
+        } catch (Exception e) {
+            throw new BusinessException(ErrorCode.SYSTEM_ERROR, "压缩包下载失败");
+        }
+
+        //3. 解压，得到项目模板文件
+        File unzipDistDir = ZipUtil.unzip(localZipFilePath);
+
+        // 4）构造 meta 对象和生成器的输出路径
+        String sourceRootPath = unzipDistDir.getAbsolutePath();
+        meta.getFileConfig().setSourceRootPath(sourceRootPath);
+        // 校验和处理默认值
+        MetaValidator.doValidAndFill(meta);
+        String outputPath = tempDirPath + "/generated/" +meta.getName() ;
+
+        // 5）调用 maker 方法制作生成器
+        GenerateTemplate generateTemplate = new ZipGenerator();
+        try {
+            generateTemplate.doGenerate(meta, outputPath);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new BusinessException(ErrorCode.SYSTEM_ERROR, "制作失败");
+        }
+
+        // 6）下载制作好的生成器压缩包
+        String suffix = "-dist.zip";
+        String zipFileName = meta.getName() + suffix;
+        // 生成器压缩包的绝对路径
+        String distZipFilePath = outputPath + suffix;
+
+        // 设置响应头
+        response.setContentType("application/octet-stream;charset=UTF-8");
+        response.setHeader("Content-Disposition", "attachment; filename=" + zipFileName);
+        Files.copy(Paths.get(distZipFilePath), response.getOutputStream());
+
+
+        // 7）清理工作空间的文件
+        CompletableFuture.runAsync(() -> {
+            FileUtil.del(tempDirPath);
+        });
+    }
 }

@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dbc9e76-a245-4681-9b0c-99d3845978b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorUseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/components/ModelConfigForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Use/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorMakeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/components/FileConfigForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/components/GeneratorMarker.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/generator/file/DynamicFileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/generator/file/DynamicFileGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/meta/MetaManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/meta/MetaManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/resources/templates/MainTemplate.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/resources/templates/MainTemplate.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/resources/templates/java/cli/CommandExecutor.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/resources/templates/java/cli/CommandExecutor.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/controller/GeneratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/controller/GeneratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/manager/CosManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/manager/CosManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/config/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/config/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/meta/Meta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorEditRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/vo/GeneratorVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/vo/GeneratorVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,41 +52,41 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/App/App_program_data/maven_repository/org/springframework/spring-web/5.3.22/spring-web-5.3.22.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.26276696&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b50958a4a3cae9ce43a65a14cb4c070c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/App/App_program_data/maven_repository/org/springframework/spring-web/5.3.22/spring-web-5.3.22.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.26276696",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "spring.configuration.checksum": "b50958a4a3cae9ce43a65a14cb4c070c",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;6e88b985-b883-4b97-8167-d9707955c41f&quot;
+    "RunConfigurationTargetLRU": [
+      "6e88b985-b883-4b97-8167-d9707955c41f"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -95,6 +95,7 @@
       <recent name="D:\study\project\lvDiyCode\lvDiyCode-web-backend\src\main\java\com\xiaolv\web\model\entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xiaolv.web.model.dto.generator" />
       <recent name="com.xiaolv.web.config" />
     </key>
   </component>
@@ -108,7 +109,13 @@
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="local" />
       <module name="lvDiyCode-web-backend" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yupi.springbootinit.MainApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiaolv.web.MainApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,6 +156,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Database Script.create_table.sql" />
+      <item itemvalue="Spring Boot.MainApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MainApplication" />
@@ -174,27 +185,12 @@
       <workItem from="1705718228362" duration="20871000" />
       <workItem from="1706234955456" duration="4793000" />
       <workItem from="1706251127481" duration="1102000" />
+      <workItem from="1706580872331" duration="9984000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xiaolv/web/controller/GeneratorController.java</url>
-          <line>345</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xiaolv/web/manager/CosManager.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
