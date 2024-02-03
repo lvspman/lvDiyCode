@@ -5,23 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dbc9e76-a245-4681-9b0c-99d3845978b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorMakeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/components/FileConfigForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/components/GeneratorMarker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/generator/file/DynamicFileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/generator/file/DynamicFileGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/manager/CacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorCacheRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/vertx/MainVerticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/vertx/VertxManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/meta/Meta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-maker/src/main/java/com/xiaolv/meta/Meta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/controller/GeneratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/controller/GeneratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/meta/Meta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorAddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorEditRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorUpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/vo/GeneratorVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/web/model/vo/GeneratorVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Detail/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Detail/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Index/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/services/backend/generatorController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/services/backend/generatorController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/services/backend/typings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/services/backend/typings.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -45,52 +54,56 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2b46ggfUNsVKANGMbRbk7qg6YSr" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/App/App_program_data/maven_repository/org/springframework/spring-web/5.3.22/spring-web-5.3.22.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.26276696",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "spring.configuration.checksum": "b50958a4a3cae9ce43a65a14cb4c070c",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/App/App_program_data/maven_repository/org/springframework/spring-web/5.3.22/spring-web-5.3.22.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.26276696&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b50958a4a3cae9ce43a65a14cb4c070c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;redis&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "6e88b985-b883-4b97-8167-d9707955c41f"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;6e88b985-b883-4b97-8167-d9707955c41f&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.xiaolv.web.model.dto.generator" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\project\lvDiyCode\lvDiyCode-web-backend\src\main\java\com\xiaolv\web\model\entity" />
     </key>
@@ -105,6 +118,38 @@
       <script-mode>FILE</script-mode>
       <data-source id="6e88b985-b883-4b97-8167-d9707955c41f" />
       <method v="2" />
+    </configuration>
+    <configuration name="GeneratorServiceTest.testBase64" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lvDiyCode-web-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaolv.web" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.web.GeneratorServiceTest" />
+      <option name="METHOD_NAME" value="testBase64" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorServiceTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lvDiyCode-web-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaolv.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaolv.web" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaolv.web.GeneratorServiceTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="local" />
@@ -158,10 +203,14 @@
     </configuration>
     <list>
       <item itemvalue="Database Script.create_table.sql" />
+      <item itemvalue="JUnit.GeneratorServiceTest.testBase64" />
+      <item itemvalue="JUnit.GeneratorServiceTest.testInsert" />
       <item itemvalue="Spring Boot.MainApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GeneratorServiceTest.testBase64" />
+        <item itemvalue="JUnit.GeneratorServiceTest.testInsert" />
         <item itemvalue="Spring Boot.MainApplication" />
         <item itemvalue="Spring Boot.MainApplication" />
         <item itemvalue="Database Script.create_table.sql" />
@@ -185,7 +234,10 @@
       <workItem from="1705718228362" duration="20871000" />
       <workItem from="1706234955456" duration="4793000" />
       <workItem from="1706251127481" duration="1102000" />
-      <workItem from="1706580872331" duration="9984000" />
+      <workItem from="1706580872331" duration="10181000" />
+      <workItem from="1706840593310" duration="3665000" />
+      <workItem from="1706923475510" duration="15923000" />
+      <workItem from="1706953604542" duration="7431000" />
     </task>
     <servers />
   </component>

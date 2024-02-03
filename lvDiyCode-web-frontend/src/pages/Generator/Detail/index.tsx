@@ -5,6 +5,7 @@ import {
   downloadGeneratorByIdUsingGet,
   getGeneratorVoByIdUsingGet,
 } from '@/services/backend/generatorController';
+// @ts-ignore
 import { Link, useModel, useParams } from '@@/exports';
 import { DownloadOutlined, EditOutlined } from '@ant-design/icons';
 import { PageContainer } from '@ant-design/pro-components';
@@ -118,7 +119,9 @@ const GeneratorDetailPage: React.FC = () => {
             <Typography.Paragraph type="secondary">作者：{data.author}</Typography.Paragraph>
             <div style={{ marginBottom: 24 }} />
             <Space size="middle">
-              <Button type="primary">立即使用</Button>
+              <Link to={`/generator/use/${data.id}`}>
+                <Button type="primary">立即使用</Button>
+              </Link>
               {downloadButton}
               {editButton}
             </Space>

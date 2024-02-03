@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec6fef97-98fe-434a-9f96-6cad01aabebd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorMakeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/components/FileConfigForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Add/components/GeneratorMarker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/file/DynamicFileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/file/DynamicFileGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/generator/main/GenerateTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/manager/CacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorCacheRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/Meta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaolv/meta/Meta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/controller/GeneratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/controller/GeneratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/meta/Meta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorAddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorEditRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/dto/generator/GeneratorUpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/vo/GeneratorVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/java/com/xiaolv/web/model/vo/GeneratorVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-backend/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Detail/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Generator/Detail/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/pages/Index/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/services/backend/generatorController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/services/backend/generatorController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/services/backend/typings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../lvDiyCode-web-frontend/src/services/backend/typings.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +212,9 @@
       <workItem from="1706234950774" duration="5637000" />
       <workItem from="1706251137166" duration="598000" />
       <workItem from="1706580886089" duration="6954000" />
+      <workItem from="1706837189495" duration="1211000" />
+      <workItem from="1706923486065" duration="763000" />
+      <workItem from="1706958350580" duration="431000" />
     </task>
     <task id="LOCAL-00001" summary="制作工具优化">
       <created>1703689566479</created>

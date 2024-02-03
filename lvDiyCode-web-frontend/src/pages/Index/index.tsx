@@ -1,9 +1,12 @@
-import { UserOutlined } from '@ant-design/icons';
-import { PageContainer, ProFormSelect, ProFormText, QueryFilter } from '@ant-design/pro-components';
-import { Avatar, Card, Flex, Image, Input, List, message, Tabs, Tag, Typography } from 'antd';
+import {UserOutlined} from '@ant-design/icons';
+import {PageContainer, ProFormSelect, ProFormText, QueryFilter} from '@ant-design/pro-components';
+import {Avatar, Card, Flex, Image, Input, List, message, Tabs, Tag, Typography} from 'antd';
 import moment from 'moment';
-import React, { useEffect, useState } from 'react';
-import {listGeneratorVoByPageUsingPost} from "@/services/backend/generatorController";
+import React, {useEffect, useState} from 'react';
+import {
+  listGeneratorVoByPageFastUsingPost,
+  listGeneratorVoByPageUsingPost
+} from "@/services/backend/generatorController";
 import {Link} from "umi";
 
 /**
@@ -35,7 +38,7 @@ const IndexPage: React.FC = () => {
   const doSearch = async () => {
     setLoading(true);
     try {
-      const res = await listGeneratorVoByPageUsingPost(searchParams);
+      const res = await listGeneratorVoByPageFastUsingPost(searchParams);
       setDataList(res.data?.records ?? []);
       setTotal(Number(res.data?.total) ?? 0);
     } catch (error: any) {
@@ -58,7 +61,7 @@ const IndexPage: React.FC = () => {
     }
 
     return (
-      <div style={{ marginBottom: 8 }}>
+      <div style={{marginBottom: 8}}>
         {tags.map((tag) => (
           <Tag key={tag}>{tag}</Tag>
         ))}
@@ -90,7 +93,7 @@ const IndexPage: React.FC = () => {
           }}
         />
       </Flex>
-      <div style={{ marginBottom: 16 }} />
+      <div style={{marginBottom: 16}}/>
 
       <Tabs
         size="large"
@@ -105,7 +108,8 @@ const IndexPage: React.FC = () => {
             label: '推荐',
           },
         ]}
-        onChange={() => {}}
+        onChange={() => {
+        }}
       />
 
       <QueryFilter
@@ -113,7 +117,7 @@ const IndexPage: React.FC = () => {
         labelWidth="auto"
         labelAlign="left"
         defaultCollapsed={false}
-        style={{ padding: '16px 0' }}
+        style={{padding: '16px 0'}}
         onFinish={async (values: API.GeneratorQueryRequest) => {
           setSearchParams({
             ...DEFAULT_PAGE_PARAMS,
@@ -123,12 +127,12 @@ const IndexPage: React.FC = () => {
           });
         }}
       >
-        <ProFormSelect label="标签" name="tags" mode="tags" />
-        <ProFormText label="名称" name="name" />
-        <ProFormText label="描述" name="description" />
+        <ProFormSelect label="标签" name="tags" mode="tags"/>
+        <ProFormText label="名称" name="name"/>
+        <ProFormText label="描述" name="description"/>
       </QueryFilter>
 
-      <div style={{ marginBottom: 24 }} />
+      <div style={{marginBottom: 24}}/>
 
       <List<API.GeneratorVO>
         rowKey="id"
@@ -157,26 +161,27 @@ const IndexPage: React.FC = () => {
         }}
         renderItem={(data) => (
           <List.Item>
-            <Link to={`/generator/detail/${data.id}`}></Link>
-            <Card hoverable cover={<Image alt={data.name} src={data.picture} />}>
-              <Card.Meta
-                title={<a>{data.name}</a>}
-                description={
-                  <Typography.Paragraph ellipsis={{ rows: 2 }} style={{ height: 44 }}>
-                    {data.description}
-                  </Typography.Paragraph>
-                }
-              />
-              {tagListView(data.tags)}
-              <Flex justify="space-between" align="center">
-                <Typography.Text type="secondary" style={{ fontSize: 12 }}>
-                  {moment(data.createTime).fromNow()}
-                </Typography.Text>
-                <div>
-                  <Avatar src={data.user?.userAvatar ?? <UserOutlined />} />
-                </div>
-              </Flex>
-            </Card>
+            <Link to={`/generator/detail/${data.id}`}>
+              <Card hoverable cover={<Image alt={data.name} src={data.picture}/>}>
+                <Card.Meta
+                  title={<a>{data.name}</a>}
+                  description={
+                    <Typography.Paragraph ellipsis={{rows: 2}} style={{height: 44}}>
+                      {data.description}
+                    </Typography.Paragraph>
+                  }
+                />
+                {tagListView(data.tags)}
+                <Flex justify="space-between" align="center">
+                  <Typography.Text type="secondary" style={{fontSize: 12}}>
+                    {moment(data.createTime).fromNow()}
+                  </Typography.Text>
+                  <div>
+                    <Avatar src={data.user?.userAvatar ?? <UserOutlined/>}/>
+                  </div>
+                </Flex>
+              </Card>
+            </Link>
           </List.Item>
         )}
       />
